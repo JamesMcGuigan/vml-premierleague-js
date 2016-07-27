@@ -1,0 +1,1 @@
+var PL_Video_swfobject = swfobject;
