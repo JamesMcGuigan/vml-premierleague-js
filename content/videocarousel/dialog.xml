@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <details
+            jcr:primaryType="cq:Panel"
+            jcr:title="Details"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tags
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new tag to filter by"
+                    fieldLabel="Videos"
+                    name="./videosList"
+                    orderable="{Boolean}false"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        rootPath=""
+                        width="155"
+                        xtype="pathfield"/>
+                </tags>
+            </items>
+        </details>
+    </items>
+</jcr:root>

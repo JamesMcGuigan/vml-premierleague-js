@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Title"
+    title="Club Listing Component"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <linkto
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Link To"
+            name="./linkto"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <def
+                    jcr:primaryType="nt:unstructured"
+                    text="(default)"
+                    value=""/>
+                <kids
+                    jcr:primaryType="nt:unstructured"
+                    text="Kid Pages"
+                    value="kids"/>
+                <players
+                    jcr:primaryType="nt:unstructured"
+                    text="Player Pages"
+                    value="players"/>
+                <clubs
+                    jcr:primaryType="nt:unstructured"
+                    text="Club Pages"
+                    value="clubs"/>
+            </options>
+        </linkto>
+    </items>
+</jcr:root>

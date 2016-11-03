@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Title (Design)"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <defType
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Default Type"
+            name="./defaultType"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <clubs
+                    jcr:primaryType="nt:unstructured"
+                    text="Club Pages"
+                    value="clubs"/>
+                <def
+                    jcr:primaryType="nt:unstructured"
+                    text="(default)"
+                    value=""/>
+                <kids
+                    jcr:primaryType="nt:unstructured"
+                    text="Kid Pages"
+                    value="kids"/>
+                <players
+                    jcr:primaryType="nt:unstructured"
+                    text="Player Pages"
+                    value="players"/>
+            </options>
+        </defType>
+    </items>
+</jcr:root>

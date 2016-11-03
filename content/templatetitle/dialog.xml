@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Title"
+    title="Page Title"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Leave empty to use the page title."
+            fieldLabel="Title"
+            name="./jcr:title"
+            xtype="textfield"/>
+        <type
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Type / Size"
+            name="./type"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <def
+                    jcr:primaryType="nt:unstructured"
+                    text="(default)"
+                    value=""/>
+                <large
+                    jcr:primaryType="nt:unstructured"
+                    text="Normal"
+                    value="large"/>
+                <sectionname
+                    jcr:primaryType="nt:unstructured"
+                    text="Section name"
+                    value="section"/>
+                <invisible
+                    jcr:primaryType="nt:unstructured"
+                    text="Invisible"
+                    value="hidden"/>
+            </options>
+        </type>
+        <logo
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Logo"
+            name="./logo"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <ea
+                    jcr:primaryType="nt:unstructured"
+                    text="EA Sports"
+                    value="ea"/>
+                <barclays
+                    jcr:primaryType="nt:unstructured"
+                    text="Barclays"
+                    value="barclays"/>
+                <tune
+                    jcr:primaryType="nt:unstructured"
+                    text="Tune Group"
+                    value="tune"/>
+            </options>
+        </logo>
+    </items>
+</jcr:root>

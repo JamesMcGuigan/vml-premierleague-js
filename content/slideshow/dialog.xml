@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Player Profile Tabs"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <Setting
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Change this here"
+                    fieldLabel="Setting"
+                    xtype="textfield"/>
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <linkroot1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News item 1"
+                        name="./linkroot1"
+                        xtype="pathfield"/>
+                    <linkroot2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News item 2"
+                        name="./linkroot2"
+                        xtype="pathfield"/>
+                    <linkroot3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News item 3"
+                        name="./linkroot3"
+                        xtype="pathfield"/>
+                    <linkroot4
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News item 4"
+                        name="./linkroot4"
+                        xtype="pathfield"/>
+                    <linkroot5
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News item 5"
+                        name="./linkroot5"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+            <Login_x0020_tab
+                jcr:primaryType="cq:Panel"
+                title="Login">
+                <Setting
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Change this here"
+                    fieldLabel="Setting"
+                    xtype="textfield"/>
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Heading"
+                        name="./heading"
+                        xtype="textfield"/>
+                    <username
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Username label"
+                        name="./username"
+                        xtype="textfield"/>
+                    <password
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Password label"
+                        name="./password"
+                        xtype="textfield"/>
+                    <link1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Link 1 text"
+                        name="./link1"
+                        xtype="textfield"/>
+                    <link2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Link 2 text"
+                        name="./link2"
+                        xtype="textfield"/>
+                    <cta
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Call to action"
+                        name="./cta"
+                        xtype="textfield"/>
+                    <linkURL1
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Link 1 URL"
+                        fieldLabel="Link to"
+                        name="./linkURL1"
+                        xtype="pathfield"/>
+                    <linkURL2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Link 2 URL"
+                        fieldLabel="Link to"
+                        name="./linkURL2"
+                        xtype="pathfield"/>
+                </items>
+            </Login_x0020_tab>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    title="Logo (Design)"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <basic
+            jcr:primaryType="cq:Widget"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <absParent
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="(eg: 1 for /content/site)"
+                    fieldLabel="Parent Level (absolute)"
+                    name="./absParent"
+                    xtype="textfield"/>
+                <altText
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Text for logo alt + title attributes"
+                    fieldLabel="Image Alt / Title Text"
+                    name="./altText"
+                    xtype="textfield"/>
+                <imgWidth
+                    jcr:primaryType="nt:unstructured"
+                    defaultValue="165"
+                    name="./maxWidth"
+                    xtype="hidden"/>
+                <margin
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="(eg: 28px 0 0 48px)"
+                    fieldLabel="Image Margin"
+                    name="./div img.margin"
+                    xtype="textfield"/>
+            </items>
+        </basic>
+        <img
+            jcr:primaryType="cq:Widget"
+            cropParameter="./imageCrop"
+            ddGroups="[media]"
+            fieldLabel="Logo Image"
+            fileNameParameter="./imageName"
+            fileReferenceParameter="./imageReference"
+            mapParameter="./imageMap"
+            name="./image"
+            rotateParameter="./imageRotate"
+            sizeLimit="100"
+            title="Image"
+            uploadUrl="/tmp/upload/*"
+            xtype="smartimage"/>
+    </items>
+</jcr:root>
